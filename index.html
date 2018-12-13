@@ -6,24 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>UGD 核心课程</title>
     <style>
-        body{
+        body {
             margin:0;
             padding:0;
-        }
-        .container{
-            position: relative;
+        } 
+        #bg {
+            display: block;
+            width: 100%;
             
         }
-        .btn{
+        .container {
+            padding-bottom: 20px;
+            /* position: relative;           */
+        }
+        .btn {
             width: 100%;
             position: fixed;
             bottom: 0;
         }
-        .btn img{
+        .btn img {
             display: block;
             width: 100%;
         }
     </style>
+    
+</head>
+<body>
+    <div id="wx_pic" style="display: none;"><img src="./static/image/fav.png" alt=""></div>
+    <div class="container">     
+        <img id="bg" src="./static/image/bg_new.jpg" alt="">
+        <div class="btn">
+            <a href="https://www.wjx.top/jq/30834530.aspx" class="imgBtn" style="display: block;" id="imgBtn">
+                <!-- <img src="./static/image/btn.jpg" alt="" class="" style="display: block;width: 100%;"> -->
+            </a> 
+        </div>
+    </div>
     <script>
         window.onload = function(){
           var img = new Image();
@@ -32,19 +49,7 @@
           aTag[0].append(img);
         }
     </script>
-</head>
-<body>
-    <div id="wx_pic" style="display: none;"><img src="./static/image/fav.png" alt=""></div>
-    <div class="container">     
-        <img src="./static/image/bg.jpg" alt="" style="display: block;width: 100%">
-        <div class="btn">
-            <a href="https://www.wjx.top/jq/30834530.aspx" class="imgBtn" style="display: block;" id="imgBtn">
-                <!--<img src="./static/image/btn.jpg" alt="" class="" style="display: block;width: 100%;">-->
-            </a> 
-        </div>
-    </div>
-
-
+    <!--流量统计-->
     <script type="text/javascript">
       var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
       document.write(unescape("%3Cspan id='cnzz_stat_icon_1275396272'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275396272%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
